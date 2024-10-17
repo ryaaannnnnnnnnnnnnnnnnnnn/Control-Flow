@@ -1,8 +1,15 @@
-// do while loops
+// Create new Date object
+const d = new Date();
+// Store the value of getHours in variable
+let hour = d.getHours();
 
-let i = 3;
+console.log(hour);
 
-do{
-    console.log('val of i is: ', i);
-    i++;
-} while(i < 5);
+if (hour < 12) {
+// Morning
+} else if (hour < 17) {
+// Afternoon
+}
+else {
+// Night
+}
