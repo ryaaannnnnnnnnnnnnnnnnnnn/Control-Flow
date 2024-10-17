@@ -1,13 +1,17 @@
-// logical operators - OR || and AND &&
+// break and continue
 
-const password = 'p@ss12';
+const scores = [50,25,0,30,100,20,10];
 
-if(password.length >= 12 && password.includes('@')){
-    console.log('that password is mighty strong');
-} else if(password.length >= 8 || password.includes ('@') && password.length >= 5){
-    console.log('that password is strong enough!');
-} else {
- console.log('password is not strong enough');
+for(let i = 0; i < scores.length; i++){
+
+    if(scores[i] === 0){
+        continue;
+    }
+
+    console.log('your score: ', scores[i]);
+
+    if(scores[i] === 100){
+        console.log('congrats, you got the top score!');
+        break;
+    }
 }
-
-
