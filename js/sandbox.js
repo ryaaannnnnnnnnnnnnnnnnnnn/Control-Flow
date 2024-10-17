@@ -1,15 +1,13 @@
-// Create new Date object
-const d = new Date();
-// Store the value of getHours in variable
-let hour = d.getHours();
+// logical operators - OR || and AND &&
 
-console.log(hour);
+const password = 'p@ss12';
 
-if (hour < 12) {
-// Morning
-} else if (hour < 17) {
-// Afternoon
+if(password.length >= 12 && password.includes('@')){
+    console.log('that password is mighty strong');
+} else if(password.length >= 8 || password.includes ('@') && password.length >= 5){
+    console.log('that password is strong enough!');
+} else {
+ console.log('password is not strong enough');
 }
-else {
-// Night
-}
+
+
